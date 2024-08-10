@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<!-- Root container is a VBox, arranging its children vertically -->
+<VBox alignment="CENTER" spacing="20" stylesheets="@style.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.assignment2java.WeatherViewController">
+
+    <!-- Set padding around the VBox -->
+    <padding>
+        <Insets bottom="20" left="20" right="20" top="20" />
+    </padding>
+
+    <!-- Heading Label for the Weather Application -->
+    <Label styleClass="title" text="Weather Application" />
+
+    <!-- TextField for entering the city name -->
+    <TextField fx:id="cityTextField" maxWidth="400" promptText="Enter city name" styleClass="text-field" />
+
+    <!-- Button to trigger the search for weather information -->
+    <Button onAction="#searchWeather" styleClass="button" text="Search" />
+
+    <!-- Label to display the weather description -->
+    <Label fx:id="weatherLabel" styleClass="weather-label" />
+
+    <!-- Label to display the temperature -->
+    <Label fx:id="tempLabel" styleClass="temp-label" />
+
+    <!-- ImageView to display the weather icon -->
+    <ImageView fx:id="weatherIcon" fitHeight="100" fitWidth="100" styleClass="weather-icon" />
+
+    <!-- ProgressBar to show progress during the weather data fetch -->
+    <ProgressBar fx:id="progressBar" styleClass="progress-bar" />
+
+    <!-- Button to switch to the exit scene -->
+    <Button fx:id="switchButton" onAction="#switchScene" styleClass="button" text="Exit" />
+
+</VBox>

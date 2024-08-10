@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Import statements for JavaFX components -->
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" spacing="20" stylesheets="@style.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.assignment2java.SecondViewController">
+
+    <!-- Set padding around the VBox -->
+    <padding>
+        <Insets bottom="20" left="20" right="20" top="20" />
+    </padding>
+
+    <!-- Label displaying the title of the second scene -->
+    <Label text="Second Scene" styleClass="scene-title" />
+
+    <!-- Button to navigate back to the main weather application scene -->
+    <Button fx:id="backButton" onAction="#goBack" styleClass="button" text="Back to Weather Application" />
+
+</VBox>
